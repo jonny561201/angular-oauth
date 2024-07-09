@@ -1,18 +1,4 @@
 <main class="main">
-  <div>
-
-    <div *ngIf="!isAuthenticated; else loggedIn">
-      <p>Please Log in</p>
-      <app-login-button/>
-    </div>
-
-    <ng-template #loggedIn>
-      <p>Congratulations!!! You are logged in</p>
-      <app-user-profile/>
-      <app-logout-button/>
-    </ng-template>
-
-  </div>
+  <router-outlet/>
 </main>
 
-<router-outlet/>

@@ -8,10 +8,14 @@ import {AuthModule} from '@auth0/auth0-angular';
 import {environment} from '../environments/environment';
 import {UserProfileComponent} from './components/user-profile/user-profile.component';
 import {LogoutButtonComponent} from './components/logout-button/logout-button.component';
+import { AccountComponent } from './pages/account/account.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AccountComponent,
+    HomeComponent,
     // LoginButtonComponent,
     // LogoutButtonComponent,
     // UserProfileComponent,
