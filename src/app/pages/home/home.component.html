@@ -1,0 +1,12 @@
+<div *ngIf="isAuthenticated; else loggedOut">
+  <ul>
+    <li>
+      <a [routerLink]="['/account']">Account</a>
+    </li>
+  </ul>
+</div>
+
+<ng-template #loggedOut>
+  <p>Please Log in</p>
+  <app-login-button/>
+</ng-template>
