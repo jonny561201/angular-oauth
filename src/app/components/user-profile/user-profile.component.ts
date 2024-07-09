@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import {AuthService} from '@auth0/auth0-angular';
-import {AsyncPipe, CommonModule} from '@angular/common';
+import {AsyncPipe, CommonModule, NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-user-profile',
   templateUrl: './user-profile.component.html',
-  imports: [ AsyncPipe, CommonModule ],
+  imports: [AsyncPipe, CommonModule, NgOptimizedImage],
   standalone: true
 })
 export class UserProfileComponent {
